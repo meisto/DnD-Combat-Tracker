@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+   <!-- Outer Border -->
+   <polygon points="4,12 12,4 188,4 196,12 196,188 188,196 12,196 4,188" fill="none" stroke="black" stroke-width="2" />
+
+   <!-- Border Circles -->
+   <g>
+      <!-- Top -->
+      <path d="M 4 24 C 9 9, 9 9, 24 4" stroke="black" fill="none"/>
+      <path d="M 176 4 C 191 9, 191 9, 196 24" stroke="black" fill="none"/>
+
+      <!-- Bottom -->
+      <path d="M 4 176 C 9 191, 9 191, 24 196" stroke="black" fill="none"/>
+      <path d="M 196 176 C 191 191, 191 191, 176 196" stroke="black" fill="none"/>
+   </g>
+
+   <g>
+      <path d="M9 12 L 9 188" stroke="black" fill="none"/>
+      <path d="M191 12 L 191 188" stroke="black" fill="none"/>
+   </g>
+</svg>

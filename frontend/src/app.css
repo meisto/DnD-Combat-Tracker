@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Rakkas';
+		src: local('Rakkas'), url('/fonts/Rakkas/Rakkas-Regular.ttf');
+	}
+	@font-face {
+		font-family: 'Gupter';
+		src: local('Rakkas'), url('/fonts/Gupter/Gupter-Regular.ttf');
+	}
+	@font-face {
+		font-family: 'Tinos';
+		src: local('Tinos'), url('/fonts/Tinos/Tinos-Regular.ttf');
+	}
+	@font-face {
+		font-family: 'EBGaramond';
+		src: local('EBGaramond'), url('/fonts/EBGaramond/static/EBGaramond-Medium.ttf');
+	}
+	@font-face {
+		font-family: 'SpectralSC';
+		src: local('EBGaramond'), url('/fonts/SpectralSC/SpectralSC-Bold.ttf');
+	}
+	@font-face {
+		font-family: 'CrimsonText';
+		src: local('CrimsonText'), url('/fonts/CrimsonText/CrimsonText-Regular.ttf');
+	}
+}
+
+@layer components {
+	.heading {
+		@apply text-center font-Rakkas font-semibold text-gray-200/75;
+	}
+
+	.btn {
+		@apply cursor-pointer rounded-lg bg-tundora p-2 font-bold text-grainbrown shadow-gray-500/50 active:scale-[.97];
+	}
+
+	.parchment {
+		box-shadow:
+			2px 3px 20px black,
+			0 0 60px #8a4d0f inset;
+		background: #fffef0;
+		color: tundora;
+	}
+}
+
+/* Filter */
+/* Source: stackoverflow.com/questions/14585101/old-paper-background-texture-with-just-css */
