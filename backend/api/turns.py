@@ -5,12 +5,4 @@
 # ======================================================================
 from fastapi import APIRouter
 
-import src.db as db
-import src.turn as turn
-
 roundRouter = APIRouter(prefix="/round")
-
-
-@roundRouter.post("/get_round")
-def get_round() -> turn.Round:
-    return []

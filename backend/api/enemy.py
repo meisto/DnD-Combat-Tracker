@@ -8,10 +8,8 @@ from sqlmodel import Session, select
 
 from sqlmodel import Session, select
 
-from .interfaces import SetInitiativeMessage, IDMessage, CharacterSelectionInformation
-from src.models import engine, NonPlayerCharacterInstance
-
-from src.models.npc import NonPlayerCharacterInstance, NonPlayerCharacter
+from .interfaces import CharacterSelectionInformation
+from schemes import engine, NonPlayerCharacterInstance, NonPlayerCharacter
 
 enemy_router = APIRouter(prefix="/enemy")
 

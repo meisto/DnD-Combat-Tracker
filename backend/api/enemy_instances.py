@@ -7,8 +7,7 @@ from sqlmodel import Session, select
 
 from sqlmodel import Session, select
 
-from src.models import engine, NonPlayerCharacterInstance
-from src.models.npc import NonPlayerCharacterInstance
+from schemes import engine, NonPlayerCharacterInstance
 
 enemy_instance_router = APIRouter(prefix="/instances")
 

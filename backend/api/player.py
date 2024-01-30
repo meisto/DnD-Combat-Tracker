@@ -5,7 +5,7 @@ from typing import List, Optional
 from fastapi import APIRouter
 from sqlmodel import Session, select
 
-from src.models import engine, PlayerCharacter
+from schemes import engine, PlayerCharacter
 
 
 player_router = APIRouter(prefix="/player")

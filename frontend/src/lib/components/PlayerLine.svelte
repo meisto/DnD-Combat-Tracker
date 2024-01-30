@@ -48,7 +48,7 @@
 				<span class="absolute -bottom-1 left-0 w-full text-center text-xs font-extrabold">AC</span>
 			</div>
 			<div class="relative rounded-sm">
-				<div class="p-2 text-center text-2xl">{'Senses placeholder'}</div>
+            <div class="p-2 text-center text-2xl">{character.passive_perception}</div>
 				<span class="absolute -bottom-1 left-0 w-full text-center text-xs font-extrabold">PP</span>
 			</div>
 		</div>

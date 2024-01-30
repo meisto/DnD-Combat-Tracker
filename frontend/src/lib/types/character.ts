@@ -48,6 +48,7 @@ export type PlayerCharacter = {
 	name: string;
 	alignment: string;
 	race_name: string;
+   player_name: string;
 	background?: string;
 	STR: number;
 	DEX: number;
@@ -75,6 +76,7 @@ export type PlayerCharacter = {
 	darkvision: number;
 	truesight: number;
 	tremorsense: number;
+   passive_perception: number;
 };
 
 export type CharacterSelection = {

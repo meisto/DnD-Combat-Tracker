@@ -1,0 +1,35 @@
+{
+	"name": "Thorsten",
+	"race": { "size": "Medium", "shape": "humanoid", "name": "human" },
+	"alignment": "Neutral Good",
+	"classes": [{ "class": "Druid", "subclass": "Circle of the Moon", "level": 9 }],
+	"armorClass": 9,
+	"armorType": "studded leather",
+
+	"speed": "30 ft.",
+	"attributes": {
+		"STR": 9,
+		"DEX": 16,
+		"CON": 14,
+		"INT": 11,
+		"WIS": 18,
+		"CHA": 14
+	},
+	"savingThrows": ["Int+4", "Wis+8"],
+	"skills": ["History+4", "Insight+9"],
+	"equipableArmor": ["Light", "Medium", "Shields"],
+	"equipableWeapons": ["Clubs", "Daggers", "Darts", "Javelins", "Maces", "quarterstaff"],
+	"senses": [{ "name": "Passive Perception", "value": 14 }],
+	"languages": ["Common", "Draconic", "Druidic"],
+	"actions": [],
+	"bonusActions": [],
+	"options": [],
+	"inventory": {
+		"equiped": [],
+		"money": {
+			"goldCoin": 10,
+			"copperCoin": 4
+		},
+		"elsewhere": ["backpack", "bedroll", "common clothing"]
+	}
+}

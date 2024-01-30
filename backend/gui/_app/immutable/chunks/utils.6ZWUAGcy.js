@@ -1,0 +1,1 @@
+import{w as n}from"./index.Zun0J0fK.js";const s=n(new Map),i=n([]),e=n([]);function o(t){return t.scrollHeight>t.clientHeight||t.scrollWidth>t.clientWidth}function a(t){return t<=1?-5:t>=30?10:Math.ceil((t-1)/2)-5}function c(t){return t<0?t.toString():"+"+t.toString()}export{i as a,s as e,c as f,a as g,o as i,e as p};

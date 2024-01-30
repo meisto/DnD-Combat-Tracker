@@ -4,7 +4,7 @@
 	import FancyBox from '$lib/components/FancyBox.svelte';
 
 	export let character: EnemyInstance;
-	export let baseEnemy: Enemy | null | undefined;
+	export let baseEnemy: Enemy;
 
 	let barWidth: number = 100;
 	let barStyle: string = 'width: 100%; background: red';
@@ -32,7 +32,10 @@
 				<div class="flex flex-col gap-0">
 					<span class="w-40 text-left font-Rakkas text-xl font-semibold leading-5 drop-shadow-2xl">
 						{character.name}
-					</span>
+               </span>
+               <span class="text-left font-CrimsonText text-sm italic text-grainbrown/25">
+                  {baseEnemy.race_name}
+               </span>
 				</div>
 				<div class="relative mx-2 flex flex-col">
 					<div class="flex flex-row justify-between">
@@ -43,7 +46,7 @@
 							{#if baseEnemy != null}
 								<span class="inline text-grainbrown/20">{baseEnemy.max_hit_points}</span>
 							{:else}
-								<span class="inline text-grainbrown/20">{'?'}</span>
+								<span class="inline text-grainbrown/20">?</span>
 							{/if}
 						</div>
 					</div>
@@ -55,13 +58,13 @@
 					{#if baseEnemy != null}
 						<div class="p-2 text-center text-2xl">{baseEnemy.armor_class}</div>
 					{:else}
-						<div class="p-2 text-center text-2xl">"?"</div>
+						<div class="p-2 text-center text-2xl">?</div>
 					{/if}
 					<span class="absolute -bottom-1 left-0 w-full text-center text-xs font-extrabold">AC</span
 					>
 				</div>
 				<div class="relative rounded-sm">
-					<div class="p-2 text-center text-2xl">?</div>
+               <div class="p-2 text-center text-2xl">{(baseEnemy != null) ? baseEnemy.passive_perception: "?"}</div>
 					<span class="absolute -bottom-1 left-0 w-full text-center text-xs font-extrabold">PP</span
 					>
 				</div>

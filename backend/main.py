@@ -3,7 +3,6 @@
 # Creation Date: Thu 11 Jan 2024 12:42:00 AM CET
 # Description: -
 # ======================================================================
-import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -13,7 +12,8 @@ import uvicorn
 
 from api import router as api_router
 from config import Config
-from src.models import set_up_database
+from schemes import set_up_database
+from src.load import load_given_characters
 
 
 @asynccontextmanager
@@ -23,8 +23,11 @@ async def lifespan(app: FastAPI):
     """
 
     set_up_database()
+    load_given_characters()
+
     # Include router paths
     app.include_router(api_router)
+    app.mount("/gui", StaticFiles(directory="gui"), name="gui")
 
     yield
 

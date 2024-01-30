@@ -10,3 +10,10 @@ install:
 format:
 	cd backend && black .
 	cd frontend && npm run format
+
+
+build:
+	cd frontend && npm run build;
+	# We need to copy the build files to the backend since it will be serving the GUI.
+	mkdir --verbose -p "backend/gui"
+	cp -r frontend/build/* backend/gui
